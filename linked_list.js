@@ -151,16 +151,16 @@ lnkList.append(3);
 lnkList.append(4);
 lnkList.prepend(1);
 
-// // console.log('Size', lnkList.size()); //4
-// // console.log('Get Head Value', lnkList.getHeadValue()); //1
-// // console.log('Get Tail Value', lnkList.getTailValue()); //4
-// // console.log('Find Index Value', lnkList.findIndexValue(2)) //3
-// // console.log('Contains Value', lnkList.containsValue(2)); //true
-// // console.log('Find Index of Value', lnkList.findIndex(1)); //0
-// // console.log('Convert to String', lnkList.listToString()); // (1) --> (2) --> (3) --> (4) --> null
-// // lnkList.popElement();
-// // console.log('Last Element Removed', lnkList.listToString()); // (1) --> (2) --> (3) --> null
-// // lnkList.insertAt(5,2); 
-// // console.log('Print list', lnkList.listToString());// (1) --> (2) --> (5) --> (3) --> null
-// console.log('Remove at', lnkList.removeAt(1));
-// console.log('Print list', lnkList.listToString());
+console.log('Size', lnkList.size()); //4
+console.log('Get Head Value', lnkList.getHeadValue()); //1
+console.log('Get Tail Value', lnkList.getTailValue()); //4
+console.log('Find Index Value', lnkList.findIndexValue(2)) //3
+console.log('Contains Value', lnkList.containsValue(2)); //true
+console.log('Find Index of Value', lnkList.findIndex(1)); //0
+console.log('Convert to String', lnkList.listToString()); // (1) --> (2) --> (3) --> (4) --> null
+lnkList.popElement();
+console.log('Last Element Removed', lnkList.listToString()); // (1) --> (2) --> (3) --> null
+lnkList.insertAt(5,2); 
+console.log('Print list', lnkList.listToString());// (1) --> (2) --> (5) --> (3) --> null
+console.log('Remove at', lnkList.removeAt(1));
+console.log('Print list', lnkList.listToString()); // // (1) --> (5) --> (3) --> null
