@@ -30,6 +30,8 @@ class Tree{
    
         root.leftTree = this.buildTree(leftArray)
         root.rightTree = this.buildTree(rightArray);
+
+        console.log(root);
         return root
     }
 
@@ -45,6 +47,17 @@ class Tree{
           this.printTree(node.leftTree, `${prefix}${isLeft ? '    ' : '│   '}`, true);
         }
       }
+
+    insertion(newValue, root = this.root){
+        if (root == null ) return new Node(newValue);
+        newValue > root.value ? this.insertion(newValue, root.leftArray) : this.insertion(newValue, root.rightArray)
+    return root;  
+    }
+
+    deletion(value, root = this.root){
+
+    }
+
 }
 
 array = [3,4,1,87,3,0,2,1,43,93]
@@ -53,3 +66,4 @@ let newTree = tree.parseArray(array); // [0,1,2,3,4,43,87,93]
 console.log(newTree);
 let balancedTree = tree.buildTree(newTree, 0, newTree.length)
 console.log(tree.printTree(balancedTree));
+console.log(tree.root.value);
